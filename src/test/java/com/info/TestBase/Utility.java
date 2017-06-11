@@ -37,7 +37,7 @@ public class Utility {
 			TakesScreenshot tc = (TakesScreenshot) driver;
 			File src = tc.getScreenshotAs(OutputType.FILE);
 
-			dest = "E:\\StudyWorkpace\\TestNG_ExtentReport_Maven\\Screenshot\\" + time + ".png"; 
+			dest = "E:\\GIT_Project\\TestNG_ExtentReport_Maven\\Screenshot\\" + time + ".png"; 
 			File destination = new File(dest);
 			FileUtils.copyFile(src, destination);
 			System.out.println("image destination" + dest);
@@ -56,9 +56,9 @@ public class Utility {
 	{
 		try
 		{
-			//report=new ExtentReports("E://Reports//Test"+System.currentTimeMillis()+".html",true);
-			report=new ExtentReports("E://Reports//Test.html",true);
-			//report=new ExtentReports("E://StudyWorkpace//ExtentReport//Report"+System.currentTimeMillis()+".html",true);
+			
+			report=new ExtentReports("E://GIT_Project//TestNG_ExtentReport_Maven//ExtentReport//Report.html",true);
+			//report=new ExtentReports("E://GIT_Project//TestNG_ExtentReport_Maven//ExtentReport//Report"+System.currentTimeMillis()+".html",true);
 			report.addSystemInfo("HostName", "Pravin")
 			.addSystemInfo("Environment", "SIT")
 			.addSystemInfo("User","Ambadas")
@@ -108,9 +108,8 @@ public class Utility {
 	@AfterTest
 	public void endTest()
 	{
-	
 		report.flush();
-		report.close();
+		//report.close();
 	}
 
 	/*@AfterMethod

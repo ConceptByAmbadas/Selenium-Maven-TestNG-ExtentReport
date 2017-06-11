@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -12,43 +13,39 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.info.TestBase.Utility;
-import com.info.pages.HomePage;
-import com.info.pages.LoginPage;
+import com.info.pages.HomeLoan;
+import com.relevantcodes.extentreports.LogStatus;
 public class MainTest extends Utility {
 	
-	static WebDriver driver;
+	public WebDriver driver;
 	
-	HomePage hp;
-	LoginPage Lp;
+	HomeLoan loan;
+	//Enquiry enquiry;
 	
 	@BeforeSuite
 	public void setup()
 	{
 		driver=new FirefoxDriver();
-		//System.setProperty(ESCAPE_PROPERTY "false");
+		PageFactory.initElements(driver,HomeLoan.class);
+	
 	}
 	@BeforeTest
 	public void launchApp()
 	{
 		driver.manage().timeouts().pageLoadTimeout(160, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		driver.get("http://www.store.demoqa.com");
+		driver.get("http://www.propchilli.com");
 		driver.manage().window().maximize();
 		
 	}
 	
 	@Test
-	public void run()
+	public void to_Validate_HomeLoanDetails()
 	{
-		 hp=new HomePage(driver);
-		 Lp=new LoginPage(driver);
-	
-		driver.findElement(By.id("account")).click();
-		//hp.Lnk_My_Account();
-		Lp.Enter_UserName("pravin");
-		Lp.Enter_Password("Test123");
-		Lp.click_Login();
-		//hp.chk_Logout();
+		//test=report.startTest("to_FIll_HomeLoan_Details");
+		//test.log(LogStatus.INFO, "Started Test");
+		loan.to_Fill_Homeloan_Details("Pravin", "9856859854", "xyz@gamil.com");
+		
 	}
 	@AfterTest
 	public void closeTest()

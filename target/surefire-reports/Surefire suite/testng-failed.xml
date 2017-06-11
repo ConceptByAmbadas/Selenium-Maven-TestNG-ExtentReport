@@ -8,8 +8,9 @@
           <include name="setup"/>
           <include name="Reportsetup"/>
           <include name="launchApp"/>
-          <include name="printReport"/>
+          <include name="getReport"/>
           <include name="closeTest"/>
+          <include name="endTest"/>
           <include name="run"/>
         </methods>
       </class> <!-- com.info.TestRunner.MainTest -->
