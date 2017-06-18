@@ -31,54 +31,16 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">162.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">182.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">com.info.TestRunner.MainTest</td><td><a href="#m1"><b>launchApp</b>  </a></td><td class="numi">1</td><td>1497202297178</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="3">com.info.TestRunner.MainTest</td><td><a href="#m2"><b>getReport</b>  </a></td><td class="numi">1</td><td>1497202459985</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m3"><b>endTest</b>  </a></td><td class="numi">1</td><td>1497202460008</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m4"><b>closeTest</b>  </a></td><td class="numi">1</td><td>1497202460003</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Default test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">com.info.TestRunner.MainTest</td><td><a href="#m5"><b>to_Validate_HomeLoanDetails</b>  </a></td><td class="numi">1</td><td>1497202459967</td><td class="numi">11</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.info.TestRunner.MainTest</td><td><a href="#m1"><b>to_Validate_HomeLoanDetails</b>  </a></td><td class="numi">1</td><td>1497786611503</td><td class="numi">41687</td></tr><tr class="passedodd"><td><a href="#m2"><b>to_Validate_Enquiry_Form</b>  </a></td><td class="numi">1</td><td>1497786653240</td><td class="numi">41896</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.info.TestRunner.MainTest:launchApp</h2>
-<div style="padding-left:3em">
-<p>Timed out waiting for page load.
-Command duration or timeout: 160.99 seconds
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;DELL&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ecd17eae-a71f-49d1-b03a-c53f5348f652</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-<br/>at com.info.TestRunner.MainTest.launchApp(MainTest.java:37)
-<br/>23 lines not shown
-<p>Caused by Timed out waiting for page load.
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;DELL&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.Utils.initWebLoadingListener/&lt;(file:///C:/Users/vostro/AppData/Local/Temp/anonymous2557057015725255538webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9071)
-<br/>at &lt;anonymous class&gt;.WebLoadingListener/e(file:///C:/Users/vostro/AppData/Local/Temp/anonymous2557057015725255538webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:5142)
-<br/>at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///C:/Users/vostro/AppData/Local/Temp/anonymous2557057015725255538webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:5150)
-<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/vostro/AppData/Local/Temp/anonymous2557057015725255538webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-<br/>1 lines not shown
-</div>
+<h2 id="m1">com.info.TestRunner.MainTest:to_Validate_Enquiry_Form</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.info.TestRunner.MainTest:getReport</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.info.TestRunner.MainTest:endTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.info.TestRunner.MainTest:closeTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.info.TestRunner.MainTest:to_Validate_HomeLoanDetails</h2>
+<h2 id="m2">com.info.TestRunner.MainTest:to_Validate_HomeLoanDetails</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

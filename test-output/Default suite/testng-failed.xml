@@ -7,8 +7,11 @@
         <methods>
           <include name="setup"/>
           <include name="Reportsetup"/>
-          <include name="to_Validate_HomeLoanDetails"/>
+          <include name="to_Validate_Enquiry_Form"/>
           <include name="launchApp"/>
+          <include name="getReport"/>
+          <include name="closeTest"/>
+          <include name="endTest"/>
         </methods>
       </class> <!-- com.info.TestRunner.MainTest -->
     </classes>

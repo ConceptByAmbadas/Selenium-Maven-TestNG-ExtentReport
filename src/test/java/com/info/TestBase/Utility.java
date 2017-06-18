@@ -80,7 +80,7 @@ public class Utility {
 
 				// String info=result.getThrowable();
 				test.log(LogStatus.FAIL, result.getThrowable());
-				test.log(LogStatus.FAIL, test.addScreenCapture(screnshotpath));
+				test.log(LogStatus.FAIL, "Below is the screen shot:-"+test.addScreenCapture(screnshotpath));
 				test.log(LogStatus.FAIL, "Test Case Fail is:- "+result.getName());
 
 				//test.addScreenCaptureFromPath("please refer below screennshot",screnshotpath);
